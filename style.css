@@ -542,9 +542,34 @@ footer .copyright {
     text-align: center;
 }
 
+
+/* SHOP PAGE */
+
+#page-header {
+    background-image: url('img/banner/b1.jpg');
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+    color: white;
+}
+
+
 /* SINGLE PRODUCT */
 
 /* BLOG PAGE */
+
+/* ABOUT PAGE */
+
+/* CONTACT PAGE */
 
 /* START MEDIA QUERY */
 
@@ -696,6 +721,14 @@ footer .copyright {
     }
 
     #banner3 .banner-box {
+        width: 100%;
+    }
+
+    #newsletter {
+       padding: 40px 20px;
+    }
+
+    #newsletter .form {
         width: 100%;
     }
 }
