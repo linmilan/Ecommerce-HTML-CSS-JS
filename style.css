@@ -89,11 +89,16 @@ body {
     position: sticky;
     top: 0;
     left: 0;
+    transition: 0.3s;
 }
 #navbar {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#navbar.active {
+    right: 0px;
 }
 
 #navbar li {
@@ -124,6 +129,11 @@ body {
     position: absolute;
     bottom: -4px;
     left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
 }
 
 /* HOME PAGE */
@@ -532,3 +542,45 @@ footer .copyright {
 /* SINGLE PRODUCT */
 
 /* BLOG PAGE */
+
+/* START MEDIA QUERY */
+
+@media (max-width: 799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40PX 60PX rgba(0, 0, 0, 0.1);
+        padding: 80PX 0 0 10px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #000;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+}
