@@ -208,6 +208,21 @@
 
         <script>
             // script for image change on click
+            var MainImg = document.getElementById('MainImg');
+            var smaillimg = document.getElementsByClassName('smaill-img');
+
+            smaillimg[0].onclick = function () {
+                MainImg.src = smaillimg[0].src;
+            }
+            smaillimg[1].onclick = function () {
+                MainImg.src = smaillimg[1].src;
+            }
+            smaillimg[2].onclick = function () {
+                MainImg.src = smaillimg[2].src;
+            }
+            smaillimg[3].onclick = function () {
+                MainImg.src = smaillimg[3].src;
+            }
         </script>
 
 
