@@ -252,6 +252,7 @@ body {
 
 #product1 .pro:hover {
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    border: 10px solid #b7b9b7;
 }
 
 #product1 .pro img {
@@ -1244,5 +1245,6 @@ footer .copyright {
 
     #subtotal {
         width: 100%;
+        padding: 20px;
     }
 }
