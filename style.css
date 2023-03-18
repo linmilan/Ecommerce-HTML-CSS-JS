@@ -938,6 +938,10 @@ footer .copyright {
     justify-content: space-between;
 }
 
+#cart .del {
+    cursor: pointer;
+}
+
 #coupon {
     width: 50%;
     margin-bottom: 30px;

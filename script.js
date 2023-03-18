@@ -13,3 +13,24 @@ if (close) {
         nav.classList.remove('active');
     })
 }
+
+// CART SECTION
+
+let del = document.querySelectorAll('.del')
+let trs = document.querySelectorAll('tbody tr')
+let tbody = document.querySelector('tbody')
+let prices = document.querySelectorAll('.price')
+let total = document.querySelectorAll('.total')
+let qtys = document.querySelectorAll('.qtys')
+
+
+for ( let i=0; i< del.length; i++) {
+    // remove items
+    del[i].addEventListener('click',function(){
+        tbody.removeChild(trs[i])
+        
+    })
+
+    
+
+}
